@@ -1,0 +1,8 @@
+version: '3.3'
+
+services:
+  meats:
+    image: eu.gcr.io/notes-10000/meats
+  
+  recipes:
+    image: eu.gcr.io/notes-10000/recipes

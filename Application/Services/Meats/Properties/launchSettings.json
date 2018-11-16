@@ -1,0 +1,35 @@
+﻿{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:5009/",
+      "sslPort": 0
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "meats/",
+      "environmentVariables": {
+        "APPPARAMETERS_DATABASE": "Server=localhost;User Id=app-parameters-api;Password=fanfan;Database=photoweb_appparameters;",
+        "APPPARAMETERS_DATABASE_MIGRATION": "Server=localhost;User Id=admin-info-web;Password=enamEPOK38Ad!;Database=photoweb_appparameters;",
+        "APPPARAMETERS_DATABASE_LAST_RETRY_IN_SECONDS": "20",
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "Meats": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "meats/",
+      "environmentVariables": {
+        "APPPARAMETERS_DATABASE": "Server=localhost;User Id=app-parameters-api;Password=fanfan;Database=photoweb_appparameters;",
+        "APPPARAMETERS_DATABASE_MIGRATION": "Server=localhost;User Id=admin-info-web;Password=enamEPOK38Ad!;Database=photoweb_appparameters;",
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "APPPARAMETERS_DATABASE_LAST_RETRY_IN_SECONDS": "20"
+      },
+      "applicationUrl": "http://localhost:5009/"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+apiVersion: v1
+data:
+  aspnetcore-environment: Development
+kind: ConfigMap
+metadata:
+  name: app-configmap-meats
+  namespace: dev

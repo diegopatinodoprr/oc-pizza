@@ -1,0 +1,11 @@
+version: '3.3'
+
+services:
+  meats:
+    build:
+      context: .
+      dockerfile: Services/Meats/Dockerfile
+  recipes:
+      build:
+        context: .
+        dockerfile: Services/Recipes/Dockerfile

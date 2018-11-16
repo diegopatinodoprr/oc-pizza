@@ -1,0 +1,70 @@
+2018-10-31 16:57:08.0362 Info Message Template Auto Format enabled
+2018-10-31 16:57:08.2383 Info Adding target File Target[allfile]
+2018-10-31 16:57:08.2383 Info Adding target File Target[ownFile-web]
+2018-10-31 16:57:08.2383 Info Adding target Null Target[blackhole]
+2018-10-31 16:57:08.2383 Info Adding target ColoredConsole Target[console]
+2018-10-31 16:57:08.2572 Info Configured from an XML element in E:\apps\notes\docker-traefik-ocelot\src\apiB\nlog.config...
+2018-10-31 16:57:08.2907 Info Found 76 configuration items
+2018-11-02 14:40:31.3639 Info Message Template Auto Format enabled
+2018-11-02 14:40:31.8664 Info Adding target File Target[allfile]
+2018-11-02 14:40:31.8706 Info Adding target File Target[ownFile-web]
+2018-11-02 14:40:31.8949 Info Adding target Null Target[blackhole]
+2018-11-02 14:40:31.8949 Info Adding target ColoredConsole Target[console]
+2018-11-02 14:40:31.9051 Info Configured from an XML element in E:\apps\notes\docker-traefik-ocelot\src\apiB\nlog.config...
+2018-11-02 14:40:31.9518 Info Found 76 configuration items
+2018-11-02 14:55:54.8038 Info Message Template Auto Format enabled
+2018-11-02 14:55:54.9284 Info Adding target File Target[allfile]
+2018-11-02 14:55:54.9327 Info Adding target File Target[ownFile-web]
+2018-11-02 14:55:54.9327 Info Adding target Null Target[blackhole]
+2018-11-02 14:55:54.9327 Info Adding target ColoredConsole Target[console]
+2018-11-02 14:55:54.9327 Info Configured from an XML element in E:\apps\notes\docker-traefik-ocelot\src\apiB\nlog.config...
+2018-11-02 14:55:54.9820 Info Found 76 configuration items
+2018-11-02 14:58:37.2032 Info Message Template Auto Format enabled
+2018-11-02 14:58:37.3899 Info Adding target File Target[allfile]
+2018-11-02 14:58:37.3899 Info Adding target File Target[ownFile-web]
+2018-11-02 14:58:37.3899 Info Adding target Null Target[blackhole]
+2018-11-02 14:58:37.3899 Info Adding target ColoredConsole Target[console]
+2018-11-02 14:58:37.4079 Info Configured from an XML element in E:\apps\notes\docker-traefik-ocelot\src\apiB\nlog.config...
+2018-11-02 14:58:37.4343 Info Found 76 configuration items
+2018-11-02 15:03:03.6362 Info Message Template Auto Format enabled
+2018-11-02 15:03:03.7619 Info Adding target File Target[allfile]
+2018-11-02 15:03:03.7619 Info Adding target File Target[ownFile-web]
+2018-11-02 15:03:03.7619 Info Adding target Null Target[blackhole]
+2018-11-02 15:03:03.7619 Info Adding target ColoredConsole Target[console]
+2018-11-02 15:03:03.7761 Info Configured from an XML element in E:\apps\notes\docker-traefik-ocelot\src\apiB\nlog.config...
+2018-11-02 15:03:03.8042 Info Found 76 configuration items
+2018-11-02 15:29:54.7352 Info Message Template Auto Format enabled
+2018-11-02 15:29:54.9683 Info Adding target File Target[allfile]
+2018-11-02 15:29:54.9683 Info Adding target File Target[ownFile-web]
+2018-11-02 15:29:54.9727 Info Adding target Null Target[blackhole]
+2018-11-02 15:29:54.9727 Info Adding target ColoredConsole Target[console]
+2018-11-02 15:29:54.9727 Info Configured from an XML element in E:\apps\notes\docker-traefik-ocelot\src\apiB\nlog.config...
+2018-11-02 15:29:55.0154 Info Found 76 configuration items
+2018-11-02 15:30:51.6512 Info Message Template Auto Format enabled
+2018-11-02 15:30:51.8082 Info Adding target File Target[allfile]
+2018-11-02 15:30:51.8082 Info Adding target File Target[ownFile-web]
+2018-11-02 15:30:51.8082 Info Adding target Null Target[blackhole]
+2018-11-02 15:30:51.8082 Info Adding target ColoredConsole Target[console]
+2018-11-02 15:30:51.8236 Info Configured from an XML element in E:\apps\notes\docker-traefik-ocelot\src\apiB\nlog.config...
+2018-11-02 15:30:51.8510 Info Found 76 configuration items
+2018-11-02 15:31:34.7346 Info Message Template Auto Format enabled
+2018-11-02 15:31:34.8692 Info Adding target File Target[allfile]
+2018-11-02 15:31:34.8692 Info Adding target File Target[ownFile-web]
+2018-11-02 15:31:34.8692 Info Adding target Null Target[blackhole]
+2018-11-02 15:31:34.8692 Info Adding target ColoredConsole Target[console]
+2018-11-02 15:31:34.8806 Info Configured from an XML element in E:\apps\notes\docker-traefik-ocelot\src\apiB\nlog.config...
+2018-11-02 15:31:34.9058 Info Found 76 configuration items
+2018-11-02 15:32:17.1453 Info Message Template Auto Format enabled
+2018-11-02 15:32:17.3678 Info Adding target File Target[allfile]
+2018-11-02 15:32:17.3678 Info Adding target File Target[ownFile-web]
+2018-11-02 15:32:17.3678 Info Adding target Null Target[blackhole]
+2018-11-02 15:32:17.3678 Info Adding target ColoredConsole Target[console]
+2018-11-02 15:32:17.3934 Info Configured from an XML element in E:\apps\notes\docker-traefik-ocelot\src\apiB\nlog.config...
+2018-11-02 15:32:17.4258 Info Found 76 configuration items
+2018-11-02 15:37:00.7635 Info Message Template Auto Format enabled
+2018-11-02 15:37:00.8754 Info Adding target File Target[allfile]
+2018-11-02 15:37:00.8754 Info Adding target File Target[ownFile-web]
+2018-11-02 15:37:00.8754 Info Adding target Null Target[blackhole]
+2018-11-02 15:37:00.8754 Info Adding target ColoredConsole Target[console]
+2018-11-02 15:37:00.8890 Info Configured from an XML element in E:\apps\notes\docker-traefik-ocelot\src\apiB\nlog.config...
+2018-11-02 15:37:00.9211 Info Found 76 configuration items
