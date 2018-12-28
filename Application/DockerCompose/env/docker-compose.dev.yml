@@ -1,0 +1,48 @@
+version: '3.3'
+
+#used for the docker run
+services:
+  proxy:
+    command: --api --docker --docker.domain=docker.localhost --logLevel=DEBUG
+    networks:
+      - webgateway
+    ports:
+      - "81:80"
+      - "8180:8080"  
+  meats.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - MEATS_DATABASE=Server=meats.database;User Id=meats-api;Password=eltiempo;Database=doprr_meats;
+      - MEATS_DATABASE_MIGRATION=Server=meats.database;User Id=doprr;Password=eltiempo!;Database=doprr_recipes;
+      - MEATS_DATABASE_LAST_RETRY_IN_SECONDS=20
+
+    networks:
+      - webgateway
+  recipes.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - MEATS_DATABASE=Server=recipes.database;User Id=recipes-api;Password=eltiempo;Database=doprr_recipes;
+      - MEATS_DATABASE_MIGRATION=Server=recipes.database;User Id=doprr;Password=eltiempo!;Database=doprr_recipes;
+      - MEATS_DATABASE_LAST_RETRY_IN_SECONDS=20
+
+    networks:
+      - webgateway
+ 
+
+
+  global.database:
+    networks:
+      webgateway:
+        aliases:
+          - meats.database
+          - recipes.database
+    ports:
+      - 3309:3306
+    volumes:
+      - database_data_dev:/var/lib/mysql
+networks:
+  webgateway:
+    driver: bridge
+
+volumes:
+  database_data_dev:

@@ -1,14 +1,14 @@
 # escape=`
 FROM microsoft/aspnetcore:2.0 AS base
 WORKDIR /app
-EXPOSE 5009
+EXPOSE 5008
 
 FROM microsoft/aspnetcore-build:2.0 AS build
 WORKDIR /src
 
 COPY /Services/ /Services/
 
-WORKDIR /Services/Meats/
+WORKDIR /Services/Recipes/
 RUN dotnet restore -nowarn:msb3202,nu1503
 
 RUN dotnet build --no-restore -c Release -o /app

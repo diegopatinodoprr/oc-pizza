@@ -1,11 +1,15 @@
-version: '3.3'
+version: "3.3"
 
 services:
-  meats:
+  meats.api:
     build:
       context: .
       dockerfile: Services/Meats/Dockerfile
-  recipes:
-      build:
-        context: .
-        dockerfile: Services/Recipes/Dockerfile
+  recipes.api:
+    build:
+      context: .
+      dockerfile: Services/Recipes/Dockerfile
+  global.database:
+    build:
+      context: .
+      dockerfile: Services/Database/MySql/Dockerfile.MySql

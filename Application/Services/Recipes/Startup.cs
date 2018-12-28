@@ -56,7 +56,6 @@ namespace apiA
         public void ConfigureContainer(ContainerBuilder builder)
         {
             builder.RegisterModule(new AutofacModule());
-            builder.RegisterModule(new AutofacModule());
         }
     }
 }

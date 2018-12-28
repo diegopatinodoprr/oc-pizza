@@ -43,7 +43,7 @@ namespace apiA
                 })
                 .UseNLog()
                 .UseStartup<Startup>()
-                .UseUrls("http://*:5009/")
+                .UseUrls("http://*:5008/")
                                         .Build()
                                        );
         }

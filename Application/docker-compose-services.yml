@@ -1,8 +1,8 @@
 version: '3.3'
 
 services:
-  meats:
+  meats.api:
     image: eu.gcr.io/notes-10000/meats
-  
-  recipes:
+
+  recipes.api:
     image: eu.gcr.io/notes-10000/recipes

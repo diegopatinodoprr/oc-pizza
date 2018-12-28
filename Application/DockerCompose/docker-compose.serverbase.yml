@@ -1,0 +1,22 @@
+version: '3.3'
+
+#used for the docker run
+services:
+  proxy:
+    image: traefik
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /dev/null:/traefik.toml
+  meats.api:
+    labels:
+      - "traefik.backend=meats.api"
+      - "traefik.frontend.rule=Host:${WEB_HOST:-localhost};PathPrefix:/meats"
+  recipes.api:
+    labels:
+      - "traefik.backend=recipes.api"
+      - "traefik.frontend.rule=Host:${WEB_HOST:-localhost};PathPrefix:/recipes"
+    depends_on:
+      - global.database
+  global.database:
+    labels:
+      - "traefik.enable=false"
