@@ -47,7 +47,7 @@ namespace apiA
                     opts.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
                     opts.SerializerSettings.Converters.Add(new StringEnumConverter
                     {
-                        CamelCaseText = true
+                        NamingStrategy = new CamelCaseNamingStrategy()
                     });
                 });
 

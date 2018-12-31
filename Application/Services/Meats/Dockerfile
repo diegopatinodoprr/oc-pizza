@@ -1,9 +1,9 @@
 # escape=`
-FROM microsoft/aspnetcore:2.0 AS base
+FROM microsoft/dotnet:2.2-aspnetcore-runtime AS base
 WORKDIR /app
 EXPOSE 5009
 
-FROM microsoft/aspnetcore-build:2.0 AS build
+FROM microsoft/dotnet:2.2-sdk AS build
 WORKDIR /src
 
 COPY /Services/ /Services/
