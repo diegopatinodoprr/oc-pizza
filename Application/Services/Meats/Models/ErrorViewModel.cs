@@ -1,6 +1,6 @@
 using System;
 
-namespace apiB.Models
+namespace MeatsApi.Models
 {
     public class ErrorViewModel
     {

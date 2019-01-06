@@ -1,24 +1,25 @@
 ﻿
+using System;
+using Autofac;
 using Helpers;
+using Meats;
+using Meats.DomainAdapters.Persistance;
+using MeatsApi.DomainAdapters.Persistance;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Serialization;
-using Microsoft.EntityFrameworkCore;
-using Autofac;
-//using Photoweb.App.Services.Catalog.DomainAdapters.Persistence;
-//using Photoweb.Authentication.Core;
 
-
-
-namespace apiA
+namespace MeatsApi
 {
     public class Startup
     {
         private readonly IHostingEnvironment _hostingEnv;
+        private IConfiguration Configuration { get; }
 
 
         public Startup(IHostingEnvironment env, IConfiguration configuration)
@@ -27,8 +28,7 @@ namespace apiA
             _hostingEnv = env;
         }
 
-        public IConfiguration Configuration { get; }
-
+       
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
@@ -36,10 +36,11 @@ namespace apiA
             {
                 services.AddCors();
             }
-            //services.AddDbContextPwb<IAppParametersContext, AppParametersContext>(opt =>
-            //  opt.UseMySql(Configuration[EnvionmentVariables.AppParametersDatabaseConnectionString]));
+            services.AddDbContextDoprr<IMeatsContext, MeatsContext>(opt =>
+                opt.UseMySql(Configuration[EnvionmentVariables.MeatsDatabaseConnectionString]));
 
-            //services.AddDbContextPwb<MigrationAppParametersContext, MigrationAppParametersContext>(opt => opt.UseMySql(Configuration[EnvionmentVariables.MigrationAppparametersDatabaseConnectionString]));
+
+            services.AddDbContextDoprr<MigrationMeatsContext, MigrationMeatsContext>(opt => opt.UseMySql(Configuration[EnvionmentVariables.MigrationMeatsDatabaseConnectionString]));
             services
                 .AddMvc()
                 .AddJsonOptions(opts =>
@@ -67,7 +68,14 @@ namespace apiA
                 .UseDefaultFiles()
                 .UseStaticFiles();
 
-
+            using (var serviceScope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope())
+            {
+                if (!serviceScope.ServiceProvider.GetService<MigrationMeatsContext>().AllMigrationsApplied())
+                {
+                    serviceScope.ServiceProvider.GetService<MigrationMeatsContext>().Database.Migrate();
+                }
+                serviceScope.ServiceProvider.GetService<MigrationMeatsContext>().Seed(_hostingEnv);
+            }
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

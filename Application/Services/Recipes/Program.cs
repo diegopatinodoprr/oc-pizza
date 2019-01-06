@@ -4,6 +4,8 @@ using Microsoft.Extensions.Configuration;
 using NLog.Web;
 using Autofac.Extensions.DependencyInjection;
 using Helpers;
+using Recipes;
+
 namespace apiA
 {
    public class Program
@@ -14,7 +16,7 @@ namespace apiA
         }
 
         public static IWebHost BuildWebHost(string[] args)
-        {   var waitAndRetry = DatabaseConnectionHelper.BuildWaitAndRetryForDatabaseConnection(EnvionmentVariables.AppParametersDatabaseLastRetryInSeconds);
+        {   var waitAndRetry = DatabaseConnectionHelper.BuildWaitAndRetryForDatabaseConnection(EnvionmentVariables.RecipesDatabaseLastRetryInSeconds);
 
 
             return waitAndRetry.Execute(() =>

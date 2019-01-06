@@ -40,7 +40,7 @@ services:
           - meats.database
           - recipes.database
     ports:
-      - 3309:3306
+      - 3306:3306
     volumes:
       - database_data:/var/lib/mysql
 networks:

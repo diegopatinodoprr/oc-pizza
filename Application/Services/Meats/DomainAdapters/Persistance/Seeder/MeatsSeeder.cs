@@ -1,25 +1,26 @@
 ﻿using System.Collections.Generic;
-using MeatsApi.Models;
-using Microsoft.AspNetCore.Mvc;
-
-namespace MeatsApi.Controllers
+using System.Linq;
+using MeatsApi.DomainAdapters.Persistance.Entities;
+using Microsoft.AspNetCore.Hosting;
+namespace Meats.DomainAdapters.Persistance.Seeder
 {
-    [Produces("application/json")]
-    public class Controller : Microsoft.AspNetCore.Mvc.Controller
+    public static class MeatsSeeder
     {
-        [HttpGet]
-        public IActionResult HealthCheck()
+        private static MigrationMeatsContext Context { get; set; }
+        public static void Seed(MigrationMeatsContext context, IHostingEnvironment hostingEnvironment)
         {
-            return Ok();
+            Context = context;
+            Context.RemoveRange(Context.Meats.ToList());
+            SeedMeats();
+            Context.SaveChanges();
+            ;
         }
 
-        [HttpGet("meats")]
-        public MeatsApi.Models.Meats Data()
+        public static void SeedMeats()
         {
-            return new MeatsApi.Models.Meats
-            {
-                PiecesOfMeat = new List<Meat>
-                {
+
+
+            var meats = new List<Meat>{
                     new Meat
                     {
                         Name = "Pig",
@@ -44,8 +45,8 @@ namespace MeatsApi.Controllers
                         Origin = "deer",
                         DishId = 4
                     }
-                }
             };
+            meats.ForEach((obj) => Context.Meats.Add(obj));
         }
     }
 }

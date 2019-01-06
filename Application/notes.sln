@@ -17,6 +17,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Recipes", "Services\Recipes
 		{1A8B7202-99CA-40D9-B542-969FF716C44A} = {1A8B7202-99CA-40D9-B542-969FF716C44A}
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataBase", "DataBase", "{52B4BDBD-3670-436B-9DB1-B49C7B406605}"
+	ProjectSection(SolutionItems) = preProject
+		Services\Database\MySql\0-init-users.sql = Services\Database\MySql\0-init-users.sql
+		Services\Database\MySql\Dockerfile.MySql = Services\Database\MySql\Dockerfile.MySql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +77,7 @@ Global
 		{1A8B7202-99CA-40D9-B542-969FF716C44A} = {A40013C6-B91B-41A4-A010-DFE5A55F6939}
 		{483FD22C-0033-48CE-A447-AF61218980F9} = {A40013C6-B91B-41A4-A010-DFE5A55F6939}
 		{650BDC85-2F4C-4FFB-9F25-251128AC836F} = {A40013C6-B91B-41A4-A010-DFE5A55F6939}
+		{52B4BDBD-3670-436B-9DB1-B49C7B406605} = {A40013C6-B91B-41A4-A010-DFE5A55F6939}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6E8585FB-CFB3-4BEE-99B2-FDD6D128D351}

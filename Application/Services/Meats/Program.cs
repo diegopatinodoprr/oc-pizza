@@ -4,7 +4,9 @@ using Microsoft.Extensions.Configuration;
 using NLog.Web;
 using Autofac.Extensions.DependencyInjection;
 using Helpers;
-namespace apiA
+using Meats;
+
+namespace MeatsApi
 {
     public class Program
     {
@@ -15,13 +17,13 @@ namespace apiA
 
         public static IWebHost BuildWebHost(string[] args)
         {
-            var waitAndRetry = DatabaseConnectionHelper.BuildWaitAndRetryForDatabaseConnection(EnvionmentVariables.AppParametersDatabaseLastRetryInSeconds);
+            var waitAndRetry = DatabaseConnectionHelper.BuildWaitAndRetryForDatabaseConnection(EnvionmentVariables.MeatsDatabaseLastRetryInSeconds);
 
 
             return waitAndRetry.Execute(() =>
 
 
-             new Microsoft.AspNetCore.Hosting.WebHostBuilder()
+             new WebHostBuilder()
                 .UseKestrel()
                 .ConfigureServices(s => s.AddAutofac())
                 .UseContentRoot(Directory.GetCurrentDirectory())

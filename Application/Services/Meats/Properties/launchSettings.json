@@ -13,9 +13,9 @@
       "launchBrowser": true,
       "launchUrl": "meats/",
       "environmentVariables": {
-        "APPPARAMETERS_DATABASE": "Server=localhost;User Id=app-parameters-api;Password=fanfan;Database=photoweb_appparameters;",
-        "APPPARAMETERS_DATABASE_MIGRATION": "Server=localhost;User Id=admin-info-web;Password=enamEPOK38Ad!;Database=photoweb_appparameters;",
-        "APPPARAMETERS_DATABASE_LAST_RETRY_IN_SECONDS": "20",
+        "MEATS_DATABASE": "Server=localhost;User Id=meats-api;Password=eltiempo;Database=doprr_meats;",
+        "MEATS_DATABASE_MIGRATION": "Server=localhost;User Id=doprr;Password=eltiempo!;Database=doprr_meats;",
+        "MEATS_DATABASE_LAST_RETRY_IN_SECONDS": "20",
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
@@ -24,10 +24,10 @@
       "launchBrowser": true,
       "launchUrl": "meats/",
       "environmentVariables": {
-        "APPPARAMETERS_DATABASE": "Server=localhost;User Id=app-parameters-api;Password=fanfan;Database=photoweb_appparameters;",
-        "APPPARAMETERS_DATABASE_MIGRATION": "Server=localhost;User Id=admin-info-web;Password=enamEPOK38Ad!;Database=photoweb_appparameters;",
-        "ASPNETCORE_ENVIRONMENT": "Development",
-        "APPPARAMETERS_DATABASE_LAST_RETRY_IN_SECONDS": "20"
+        "MEATS_DATABASE": "Server=localhost;User Id=meats-api;Password=eltiempo;Database=doprr_meats;",
+        "MEATS_DATABASE_MIGRATION": "Server=localhost;User Id=doprr;Password=eltiempo!;Database=doprr_meats;",
+        "MEATS_DATABASE_LAST_RETRY_IN_SECONDS": "20",
+        "ASPNETCORE_ENVIRONMENT": "Development"
       },
       "applicationUrl": "http://localhost:5009/"
     }

@@ -8,7 +8,7 @@
     <PackageReference Include="Autofac" Version="4.8.1" />
     <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.3.1" />
     <PackageReference Include="AutoMapper" Version="8.0.0" />
-    <PackageReference Include="Microsoft.AspNetCore.All"  />
+    <PackageReference Include="Microsoft.AspNetCore.All" />
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.0" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
@@ -19,5 +19,17 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Helpers\Helpers.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DomainAdapters\" />
+    <Folder Include="DomainAdapters\Persistance\" />
+    <Folder Include="DomainAdapters\Persistance\Entities\" />
+    <Folder Include="DomainAdapters\Persistance\Configuration\" />
+    <Folder Include="DomainAdapters\Persistance\Repositories\" />
+    <Folder Include="DomainAdapters\Persistance\Mapping\" />
+    <Folder Include="DomainAdapters\Persistance\Seeder\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="MeatsContext.cs" />
   </ItemGroup>
 </Project>
