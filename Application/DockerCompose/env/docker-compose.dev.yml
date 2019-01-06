@@ -3,12 +3,18 @@ version: '3.3'
 #used for the docker run
 services:
   proxy:
-    command: --api --docker --docker.domain=docker.localhost --logLevel=DEBUG
+    command: --api --docker --docker.domain=docker.localhost --logLevel=DEBUG  --docker.exposedbydefault=true
     networks:
       - webgateway
     ports:
-      - "81:80"
-      - "8180:8080"  
+      - "80:80"
+      - "8080:8080"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock # So that Traefik can listen to the Docker events
+  app:
+    
+    networks:
+      - webgateway
   meats.api:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
@@ -27,9 +33,6 @@ services:
 
     networks:
       - webgateway
- 
-
-
   global.database:
     networks:
       webgateway:
@@ -39,10 +42,10 @@ services:
     ports:
       - 3309:3306
     volumes:
-      - database_data_dev:/var/lib/mysql
+      - database_data:/var/lib/mysql
 networks:
   webgateway:
     driver: bridge
 
 volumes:
-  database_data_dev:
+  database_data:

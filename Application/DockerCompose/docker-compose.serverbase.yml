@@ -10,13 +10,20 @@ services:
   meats.api:
     labels:
       - "traefik.backend=meats.api"
-      - "traefik.frontend.rule=Host:${WEB_HOST:-localhost};PathPrefix:/meats"
+      - "traefik.frontend.rule=Host:${APP_HOST};PathPrefix:/meats"
+    depends_on:
+      - global.database
   recipes.api:
     labels:
       - "traefik.backend=recipes.api"
-      - "traefik.frontend.rule=Host:${WEB_HOST:-localhost};PathPrefix:/recipes"
+      - "traefik.frontend.rule=Host:${APP_HOST};PathPrefix:/recipes"
     depends_on:
       - global.database
   global.database:
     labels:
       - "traefik.enable=false"
+  app:
+    build: .
+    labels:
+      - "traefik.enable=true"
+      - "traefik.frontend.rule=Host:${APP_HOST}"

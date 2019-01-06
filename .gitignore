@@ -4,7 +4,7 @@ project.lock.json
 .DS_Store
 *.pyc
 nupkg/
-
+./build
 # Visual Studio Code
 .vscode
 *.secret
@@ -29,6 +29,16 @@ bld/
 msbuild.log
 msbuild.err
 msbuild.wrn
+node_modules/
 
 # Visual Studio 2015
 .vs/
+
+logs/*
+node_modules/
+bower_components/
+app/jspm_packages
+tmp
+.DS_Store
+.idea
+!.gitkeep

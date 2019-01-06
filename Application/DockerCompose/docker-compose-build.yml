@@ -13,3 +13,9 @@ services:
     build:
       context: .
       dockerfile: Services/Database/MySql/Dockerfile.MySql
+  app:
+    build:
+      context: .
+      dockerfile: Views/Dockerfile-dev
+    volumes:
+      - "./src:/home/node/app/src"
