@@ -289,3 +289,31 @@
 2019-01-06 23:41:36.4808 Info Found 76 configuration items
 2019-01-06 23:42:06.9589 Info Shutting down logging...
 2019-01-06 23:42:06.9717 Info Logger has been shut down.
+2019-01-07 21:08:23.4216 Info Message Template Auto Format enabled
+2019-01-07 21:08:23.5180 Info Adding target File Target[allfile]
+2019-01-07 21:08:23.5200 Info Adding target File Target[ownFile-web]
+2019-01-07 21:08:23.5200 Info Adding target Null Target[blackhole]
+2019-01-07 21:08:23.5214 Info Adding target ColoredConsole Target[console]
+2019-01-07 21:08:23.5305 Info Configured from an XML element in /Users/dev/Documents/PERSO/devPerso/notes/Application/Services/Meats/nlog.config...
+2019-01-07 21:08:23.5530 Info Found 76 configuration items
+2019-01-07 21:39:45.9615 Info Message Template Auto Format enabled
+2019-01-07 21:39:46.0465 Info Adding target File Target[allfile]
+2019-01-07 21:39:46.0482 Info Adding target File Target[ownFile-web]
+2019-01-07 21:39:46.0489 Info Adding target Null Target[blackhole]
+2019-01-07 21:39:46.0500 Info Adding target ColoredConsole Target[console]
+2019-01-07 21:39:46.0594 Info Configured from an XML element in /Users/dev/Documents/PERSO/devPerso/notes/Application/Services/Meats/nlog.config...
+2019-01-07 21:39:46.0796 Info Found 76 configuration items
+2019-01-07 21:47:00.8767 Info Message Template Auto Format enabled
+2019-01-07 21:47:00.9616 Info Adding target File Target[allfile]
+2019-01-07 21:47:00.9633 Info Adding target File Target[ownFile-web]
+2019-01-07 21:47:00.9633 Info Adding target Null Target[blackhole]
+2019-01-07 21:47:00.9649 Info Adding target ColoredConsole Target[console]
+2019-01-07 21:47:00.9730 Info Configured from an XML element in /Users/dev/Documents/PERSO/devPerso/notes/Application/Services/Meats/nlog.config...
+2019-01-07 21:47:00.9930 Info Found 76 configuration items
+2019-01-07 21:51:00.3347 Info Message Template Auto Format enabled
+2019-01-07 21:51:00.4206 Info Adding target File Target[allfile]
+2019-01-07 21:51:00.4226 Info Adding target File Target[ownFile-web]
+2019-01-07 21:51:00.4230 Info Adding target Null Target[blackhole]
+2019-01-07 21:51:00.4230 Info Adding target ColoredConsole Target[console]
+2019-01-07 21:51:00.4317 Info Configured from an XML element in /Users/dev/Documents/PERSO/devPerso/notes/Application/Services/Meats/nlog.config...
+2019-01-07 21:51:00.4517 Info Found 76 configuration items

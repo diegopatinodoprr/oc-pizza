@@ -1,8 +1,8 @@
-﻿using Meats.DomainAdapters.Persistance.Configuration;
+﻿using MeatsApi.DomainAdapters.Persistance.Configuration;
 using MeatsApi.DomainAdapters.Persistance.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace Meats.DomainAdapters.Persistance
+namespace MeatsApi.DomainAdapters.Persistance
 {
     public class MigrationMeatsContext : DbContext
     {

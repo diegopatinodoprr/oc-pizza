@@ -1,5 +1,5 @@
-﻿using Meats.DomainAdapters.Persistance;
-using Meats.DomainAdapters.Persistance.Configuration;
+﻿using MeatsApi.DomainAdapters.Persistance;
+using MeatsApi.DomainAdapters.Persistance.Configuration;
 using MeatsApi.DomainAdapters.Persistance.Entities;
 using Microsoft.EntityFrameworkCore;
 

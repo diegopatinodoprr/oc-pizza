@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
+    <RootNamespace>MeatsApi</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -28,6 +29,8 @@
     <Folder Include="DomainAdapters\Persistance\Repositories\" />
     <Folder Include="DomainAdapters\Persistance\Mapping\" />
     <Folder Include="DomainAdapters\Persistance\Seeder\" />
+    <Folder Include="Application\" />
+    <Folder Include="Application\Queries\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="MeatsContext.cs" />

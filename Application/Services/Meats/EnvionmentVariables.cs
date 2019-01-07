@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Meats
+namespace MeatsApi
 {
     public static class EnvionmentVariables
     {

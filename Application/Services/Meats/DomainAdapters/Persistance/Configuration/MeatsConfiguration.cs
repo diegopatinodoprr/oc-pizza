@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using MeatsApi.DomainAdapters.Persistance.Entities;
 
-namespace Meats.DomainAdapters.Persistance.Configuration
+namespace MeatsApi.DomainAdapters.Persistance.Configuration
 {
     public class MeatsConfiguration: IEntityTypeConfiguration<Meat>
     {

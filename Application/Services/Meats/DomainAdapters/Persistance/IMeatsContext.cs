@@ -2,7 +2,7 @@
 using MeatsApi.DomainAdapters.Persistance.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace Meats.DomainAdapters.Persistance
+namespace MeatsApi.DomainAdapters.Persistance
 {
     public interface IMeatsContext
     {

@@ -2,7 +2,7 @@
 using System.Linq;
 using MeatsApi.DomainAdapters.Persistance.Entities;
 using Microsoft.AspNetCore.Hosting;
-namespace Meats.DomainAdapters.Persistance.Seeder
+namespace MeatsApi.DomainAdapters.Persistance.Seeder
 {
     public static class MeatsSeeder
     {

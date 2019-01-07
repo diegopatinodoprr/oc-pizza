@@ -1,9 +1,5 @@
-﻿
-using System;
-using Autofac;
+﻿using Autofac;
 using Helpers;
-using Meats;
-using Meats.DomainAdapters.Persistance;
 using MeatsApi.DomainAdapters.Persistance;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;

@@ -1,10 +1,10 @@
 ﻿using System.IO;
+using Autofac.Extensions.DependencyInjection;
+using Helpers;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using NLog.Web;
-using Autofac.Extensions.DependencyInjection;
-using Helpers;
-using Meats;
+
 
 namespace MeatsApi
 {

@@ -1,10 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using AutoMapper;
-using MeatsApi.DomainAdapters.Persistance;
 using MeatsApi.Models;
 
-namespace Meats.DomainAdapters.Persistance.Repositories
+namespace MeatsApi.DomainAdapters.Persistance.Repositories
 {
     public interface IMeatsRepository
     {

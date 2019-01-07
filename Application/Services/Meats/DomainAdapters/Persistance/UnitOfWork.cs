@@ -2,7 +2,7 @@
 using Helpers;
 using MeatsApi.DomainAdapters.Persistance;
 
-namespace Meats.DomainAdapters.Persistance
+namespace MeatsApi.DomainAdapters.Persistance
 {
     public class UnitOfWork: IUnitOfWork
     {

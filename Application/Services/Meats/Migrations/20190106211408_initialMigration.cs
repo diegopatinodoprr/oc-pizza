@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Meats.Migrations
+namespace MeatsApi.Migrations
 {
     public partial class initialMigration : Migration
     {

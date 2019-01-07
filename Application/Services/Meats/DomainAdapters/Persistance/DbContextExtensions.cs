@@ -1,11 +1,11 @@
 ﻿using System.Linq;
-using Meats.DomainAdapters.Persistance.Seeder;
+using MeatsApi.DomainAdapters.Persistance.Seeder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Meats.DomainAdapters.Persistance
+namespace MeatsApi.DomainAdapters.Persistance
 {
     public static class DbContextExtensions
     {
