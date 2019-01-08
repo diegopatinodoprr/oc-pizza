@@ -1,0 +1,71 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: apis
+  annotations:
+    kubernetes.io/ingress.class: traefik
+    traefik.frontend.rule.type: PathPrefix
+spec:
+  tls:
+    - secretName: https-certificate
+  rules:
+  - host: dev-app.photoweb.fr
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: service-manifest
+          servicePort: http
+      - path: /mobileapi
+        backend:
+          serviceName: gateway-mobileapi
+          servicePort: http
+      - path: /catalog
+        backend:
+          serviceName: service-catalog
+          servicePort: http
+      - path: /account
+        backend:
+          serviceName: service-account
+          servicePort: http
+      - path: /auth
+        backend:
+          serviceName: service-auth
+          servicePort: http
+      - path: /composition
+        backend:
+          serviceName: service-composition
+          servicePort: http
+      - path: /order
+        backend:
+          serviceName: service-order
+          servicePort: http
+      - path: /parameters
+        backend:
+          serviceName: service-appparameters
+          servicePort: http
+      - path: /shipment
+        backend:
+          serviceName: service-shipment
+          servicePort: http
+---
+  apiVersion: extensions/v1beta1
+  kind: Ingress
+  metadata:
+    name: backoffice
+    annotations:
+      kubernetes.io/ingress.class: traefik
+      traefik.frontend.rule.type: PathPrefixStrip
+      traefik.ingress.kubernetes.io/preserve-host: "true"
+      ingress.kubernetes.io/whitelist-source-range: "31.193.53.16/29,37.71.78.160/28,92.154.64.106/32,89.30.108.0/24"
+  spec:
+    tls:
+      - secretName: https-certificate
+    rules:
+    - host: dev-app.photoweb.fr
+      http:
+        paths:
+        - path: /b/rmq/
+          backend:
+            serviceName: rabbitmq
+            servicePort: management
