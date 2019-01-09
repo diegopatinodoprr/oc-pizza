@@ -7,3 +7,5 @@ services:
     image: eu.gcr.io/notes-10000/recipes
   app:
     image: eu.grc.io/notes-10000/web-app
+  ocpizzas.database:
+    image: reu.grc.io/notes-10000/aocpizzas.database

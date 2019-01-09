@@ -6,10 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf build && mkdir build",
-    "build-babel": "babel -d ./Views/build ./Views/src -s",
+    "build-babel": "babel -d ./build ./src -s",
     "build": "npm run clean && npm run build-babel",
-    "start": "node ./Views/build/index.js",
-    "dev": "nodemon ./Views/src/index.js --exec babel-node"
+    "start": "node ./build/index.js",
+    "dev": "nodemon ./src/index.js --exec babel-node"
   },
   "keywords": [],
   "author": "",

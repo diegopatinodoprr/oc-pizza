@@ -1,4 +1,4 @@
-FROM node:9-alpine
+FROM node:10.13-alpine
 
 WORKDIR /home/node/app
 
@@ -7,7 +7,8 @@ COPY ./Views/package* ./
 RUN npm install && \
     npm cache clean --force
 
-COPY . .
+COPY ./Views/build ./build
+COPY ./Views/oc-pizzas/dist/oc-pizzas/ ./dist
 
 # Expose ports (for orchestrators and dynamic reverse proxies)
 EXPOSE 3000
