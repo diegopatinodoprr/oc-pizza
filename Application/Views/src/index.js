@@ -3,7 +3,7 @@ import * as config from "./config";
 
 // Init express
 const app = express();
-
+app.use(express.static('./dist'));
 app.get("/", function (req, res) {
   res.send("Bientot de recettes sur  : " + req.connection.localAddress);
 });

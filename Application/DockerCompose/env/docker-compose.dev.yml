@@ -19,7 +19,7 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - MEATS_DATABASE=Server=meats.database;User Id=meats-api;Password=eltiempo;Database=doprr_meats;
-      - MEATS_DATABASE_MIGRATION=Server=meats.database;User Id=doprr;Password=eltiempo!;Database=doprr_recipes;
+      - MEATS_DATABASE_MIGRATION=Server=meats.database;User Id=doprr;Password=eltiempo!;Database=doprr_meats;
       - MEATS_DATABASE_LAST_RETRY_IN_SECONDS=20
 
     networks:
@@ -33,7 +33,7 @@ services:
 
     networks:
       - webgateway
-  global.database:
+  ocpizzas.database:
     networks:
       webgateway:
         aliases:
@@ -42,10 +42,10 @@ services:
     ports:
       - 3306:3306
     volumes:
-      - database_data:/var/lib/mysql
+      - ocpizzas_data:/var/lib/mysql
 networks:
   webgateway:
     driver: bridge
 
 volumes:
-  database_data:
+  ocpizzas_data:

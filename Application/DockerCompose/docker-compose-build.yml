@@ -9,7 +9,7 @@ services:
     build:
       context: .
       dockerfile: Services/Recipes/Dockerfile
-  global.database:
+  ocpizzas.database:
     build:
       context: .
       dockerfile: Services/Database/MySql/Dockerfile.MySql
