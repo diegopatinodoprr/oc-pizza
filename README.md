@@ -1,12 +1,11 @@
-*# Project Notes
-
-  
+# Project OC-Pizza
 
   
 
 ## Description
 Ce Project a comme objectif, de démontrer mes capacités a développer,documenter et déployer une application web.
-![Functionement global du site](https://drive.google.com/file/d/12ZU5vHpYEcoRUhP-DBm8E8JeNFDsvSPm/view?usp=sharing)
+
+![Functionement global du site](https://github.com/diegopatinodoprr/oc-pizza/blob/master/Documentation/solution%20fonctionelle%20.png)
 
   
 
