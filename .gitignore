@@ -3,6 +3,7 @@
 project.lock.json
 .DS_Store
 *.pyc
+*.~lock.*
 nupkg/
 ./build
 # Visual Studio Code
