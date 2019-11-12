@@ -52,7 +52,7 @@ Ce Project a comme objectif, de démontrer mes capacités a développer,document
     
    
 
-`     ./build.sh`
+`     ./scripts/build.sh`
        
 
 ceci aura pour effet la génération des images docker nécessaires au fonctionnement de l'application. la documentation concernant la generation des images docker est [ici](/Documentation/Docker-Images.md) :
@@ -74,7 +74,7 @@ avec la commande
 
   
 
-`./run.sh`
+`./scripts/run.sh`
 
 vous pouvez demarrer l'application en local.
 
